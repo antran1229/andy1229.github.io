@@ -9,11 +9,12 @@ header{
   .wrapper{
     
     border: 1px black solid;
-    max-width: 1100px;
     margin: 0 auto;
+    max-width: 100%;
   }
 
 nav{
+  border: 1px black solid;
   text-align: center;
   padding: 10px 0;
   margin: 10px 0 0;
@@ -44,6 +45,7 @@ nav a {
 
 /*add hover pseudo class to turn "button" to another colour*/
 nav a:hover{
+  
   background-color: black;
   color: white;
   
@@ -73,10 +75,29 @@ footer{
 /*change happen when screen size change*/
 @media screen and (min-width: 800px){
   body{
-    background-color: red;
+    background-color: salmon;
+  }
+  
+  nav{
+    /*float nav to the left based on screen size*/
+    float: left;
+    width: 20%;
+  }
+  
+  nav li{
+    display: block;
+    padding: 10px 20px;
+    with: 100%;
+  }
+  
+  #main{
+    
   }
 }
-  
 
+@media screen and (min-width: 1200px){
+  .wrapper{
+    max-width: 1100px;
+  }
+}
 
-  
